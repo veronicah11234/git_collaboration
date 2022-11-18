@@ -4,9 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git </title>
+    <title>E-duka</title>
+
+    <!-- webpage icon -->
+    <link rel="shortcut icon" href="webicon.png">
+
+     <!-- CSS styling -->
+     <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+        background-color: white;
+      }
+
+      header {
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.938);
+        margin: 0px;
+        justify-content: center;
+      }
+
+      header h1 {
+        color: rgba(255, 140, 0, 0.808);
+        font-weight: 600;
+      }
+
+      nav {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.938);
+        margin-top: 3px;
+        justify-content: center;
+        word-spacing: 1.3cm;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+      ul li {
+        display: inline-block;
+        margin: 0 10px;
+        list-style: none;
+        position: relative;
+      }
+      ul li a:hover {
+        color: rgba(255, 140, 0, 0.808);
+      }
+      ul li::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+      }
+      ul li:hover::after {
+        width: 100%;
+      }
+      main {
+        margin: 10px 20px;
+        background-color: rgba(128, 128, 128, 0.712);
+        width: 97%;
+        border-radius: 20px;
+
+        /*this is so that the pages with less content are not so short*/
+        min-height: 500px;
+      }
+      footer {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.938);
+      }
+      footer h4 {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: x=small;
+      }
+      .logo{
+        flex-grow: 1
+      }
+      .logo a img{
+        margin-top: 5px; 
+        margin-left: 5px; 
+        padding: 5px;
+      }
+      .title{
+        flex-grow: 1
+      }
+      .title h1{
+        padding: 10px;
+      }
+      .title a img{
+        float: right; 
+        border-radius: 50%; 
+        margin-top: -70px; 
+        margin-right: 10px;
+      }
+     </style>
 </head>
 <body>
-    
+     <!-- header -->
+     <header>
+        <div class="logo">
+          <a href="#"><img src="logo.png" width="100px" height="100px" /></a>
+        </div>
+        <div class="title">
+          <h1>E-duka</h1>
+          <a href="#"><img src="user.png" width="50px" height="50px" /></a>
+        </div>
+      </header>
+  
+      <!-- navigation bar -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Orders</a></li>
+        </ul>
+      </nav>
+  
+      <main>
+        <!-- individual content goes in here -->
+
+      </main>
+  
+      <!-- footer -->
+      <footer>
+        <h4>Pay Less For More.</h4>
+      </footer>
 </body>
 </html>
